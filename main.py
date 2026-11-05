@@ -1,16 +1,14 @@
-# This is a sample Python script.
+print("Program Started")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+letter = input("Please enter a standard character: ")
 
+if len(letter) == 1:
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    ascii_value = ord(letter)
 
+    print(f"The ASCII code for {letter} is: {ascii_value}")
+else:
+    print("Error: Please enter exactly a single character")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    print("Program Ended!")
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
